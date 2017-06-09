@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Learn Swift coding for iOS with these free tutorials – all written for Swift 3, iOS 10, and Xcode 8">
+    <meta name="keywords" content="hacking with swift, swift 3, swift, tutorial, ios, ios 10, wwdc, apple, ipad, iphone, free, tutorial, guide, objective c, watchos, tvos, macOS, watchkit">
+    <meta name="author" content="Paul Hudson @twostraws">
+    <title>Hacking with Swift – learn to code iPhone and iPad apps with free Swift 3 tutorials</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+    <link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Retina.js - Load first for faster HQ mobile images. -->
+    <script src="/js/plugins/retina/retina.min.js"></script>
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" rel="stylesheet">
+    <link rel="stylesheet" href="/css/prism.css">
+
+    <link href="/css/vitality-red.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/hws.css">
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="canonical" href="https://www.hackingwithswift.com/read" />
+</head>
+<!-- Alternate Body Classes: .modern and .vintage -->
+
+<body id="page-top">
+    <!-- Navigation -->
+    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
+
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">
+                    <img src="/img/logo.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#courses">Courses</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    
+
+        <header style="background-image: url('/img/bg-hws-free.jpg');">
+        <div class="intro-content">
+            <img src="/img/swift_logo.png" class="img-responsive img-centered" alt="">
+            <div class="brand-name">HACKING WITH SWIFT ONLINE</div>
+
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h1>LEARN SWIFT FOR FREE</h1>
+                    <p>Hacking with Swift is a complete Swift tutorial written for Swift 3 and iOS 10, taking from you beginner to advanced using hands-on projects.</p>
+                    <hr class="colored">
+                </div>
+            </div>
+            <div class="row text-center content-row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="about-content">
+                        <i class="fa fa-check fa-4x"></i>
+                        <h3>What you get</h3>
+                        <p>Here you can find the 39 Hacking with Swift projects plus the introduction to Swift – all available for free. Every project is updated for Swift 3 and iOS 10.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="about-content">
+                        <i class="fa fa-ban fa-4x"></i>
+                        <h3>What you don't get</h3>
+                        <p>The online Hacking with Swift doesn't include the Xcode tips and tricks video, the guide book with revision notes and exercises, or the quick tips wall chart.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="about-content">
+                        <i class="fa fa-money fa-4x"></i>
+                        <h3>Supported with ads</h3>
+                        <p>This site is supported by readers who <a href="/store/hacking-with-swift">buy the Hacking with Swift e-book</a> and by showing unobtrusive Google adverts on project chapters.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="about-content">
+                        <i class="fa fa-play fa-4x"></i>
+                        <h3>Where to start</h3>
+                        <p>Most people should start with the introduction to Swift, but if you're already experienced with Swift you can jump into any project that interests you!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" style="margin-top: 30px">
+                <div class="col-lg-12" style="text-align: center">
+                    <p style="max-width: 600px; margin: auto"><strong>If you can support my work by <a href="/store">buying a book</a>, it's hugely appreciated.</strong><br />But I recognize that not everyone can afford to buy the e-book version of Hacking with Swift, so it's also available free online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="cta-form bg-dark">
+        <div class="container text-center">
+            <h3>Subscribe to my newsletter</h3>
+            <p>Get an <u>immediate</u> $5 off the Hacking with Swift e-book sent to your inbox, plus more discounts in the future!</p>
+            <hr class="colored">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div id="mc_embed_signup">
+                        <form role="form" action="https://gumroad.com/follow_from_embed_form" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                            <div class="input-group input-group-lg">
+                                <input type="email" name="email" class="form-control" id="mce-EMAIL" placeholder="Enter your email address...">
+                                <input name="seller_id" type="hidden" value="1196435742118">
+                                <span class="input-group-btn">
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe</button>
+                                </span>
+                            </div>
+                            <div id="mce-responses">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="cta-quote" style="background-image: url('/img/bg-aside.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <span class="quote">“Great to see free intro to Swift programming content <span class="text-primary" style="font-weight: 500">that is so well done!</span>”<br /><br /><sup>CHRIS LATTNER, CREATOR OF SWIFT</sup></span>
+                    <hr class=" colored">
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section id="tutorials" class="bg-gray">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-10">
+                    <h2>TUTORIALS</h2>
+                    <hr class="colored">
+                    <p>If this is your first time learning Swift, you should start at the introduction and continue from there. If you're already experienced with Swift, dive in wherever takes your interest!</p>
+
+                    <a href="/read/0/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Introduction to Swift</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn the basics of Swift syntax using Xcode playgrounds – start here if this is your first time using Swift.</p>
+
+                    <a href="/read/1/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 1: Storm Viewer</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Constants and variables, UITableView, UIImageView, FileManager, storyboards</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Get started coding in Swift by making an image viewer app and learning key concepts.</p>
+
+                    <a href="/read/2/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 2: Guess the Flag</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Asset catalogs, UIButton, CALayer, UIColor, UIAlertController</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Make a game using UIKit, and learn about integers, buttons, colors and actions.</p>
+
+                    <a href="/read/3/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 3: Social Media</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">UIBarButtonItem, UIActivityViewController, URL</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Let users share to Facebook and Twitter by modifying project 1.</p>
+
+                    <a href="/read/4/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 4: Easy Browser</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">loadView(), WKWebView, URLRequest, UIToolbar, UIProgressView, key-value observing</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Embed Web Kit and learn about delegation, KVO, classes and UIToolbar.</p>
+
+                    <a href="/read/5/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 5: Word Scramble</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Closures, method return values, booleans, NSRange</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Create an anagram game while learning about closures and booleans.</p>
+
+                    <a href="/read/6/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 6: Auto Layout</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">NSLayoutConstraint, Visual Format Language, layout anchors</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Get to grips with Auto Layout using practical examples and code.</p>
+
+                    <a href="/read/7/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 7: Whitehouse Petitions</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">JSON, Data, UITabBarController</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Make an app to parse Whitehouse petitions using JSON and a tab bar.</p>
+
+                    <a href="/read/8/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 8: 7 Swifty Words</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">addTarget(), enumerated(), count(), index(of:), joined(), property observers, range operators</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Build a word-guessing game and master strings once and for all.</p>
+
+                    <a href="/read/9/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 9: Grand Central Dispatch</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">DispatchQueue, perform(inBackground:)</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn how to run complex tasks in the background with GCD.</p>
+
+                    <a href="/read/10/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 10: Names to Faces</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">UICollectionView, UIImagePickerController, UUID, classes</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Get started with UICollectionView and the photo library.</p>
+
+                    <a href="/read/11/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 11: Pachinko</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">SpriteKit, physics, blend modes, radians, CGFloat, NSKeyedUnarchiver</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Dive into SpriteKit to try your hand at fast 2D games.</p>
+
+                    <a href="/read/12/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 12: UserDefaults</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">UserDefaults, NSCoding, NSKeyedArchiver</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn how to save user settings and data for later use.</p>
+
+                    <a href="/read/13/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 13: Instafilter</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Core Image, UISlider, writing to the photo library</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Make a photo manipulation program using Core Image filters and a UISlider.</p>
+
+                    <a href="/read/14/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 14: Whack-a-Penguin</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">SKCropNode, SKTexture, asyncAfter()</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Build a game using SKCropNode and a sprinkling of Grand Central Dispatch.</p>
+
+                    <a href="/read/15/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 15: Animation</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Core Animation, CGAffineTransform</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Bring your interfaces to life with animation, and meet switch/case at the same time.</p>
+
+                    <a href="/read/16/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 16: JavaScript Injection</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Safari extensions, UITextView, NotificationCenter</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Extend Safari with a cool feature for JavaScript developers.</p>
+
+                    <a href="/read/17/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 17: Swifty Ninja</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">SKShapeNode, AVAudioPlayer, UIBezierPath, custom enums</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn to draw shapes in SpriteKit while making a fun and tense slicing game.</p>
+
+                    <a href="/read/18/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 18: Debugging</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">print(), assert(), breakpoints, and view debugging</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Everyone hits problems sooner or later, so learning to find and fix them is an important skill.</p>
+
+                    <a href="/read/19/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 19: Capital Cities</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">MKMapView, MKAnnotation, MKPinAnnotationView, CLLocationCoordinate2D</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Teach users about geography while you learn about MKMapView and annotations.</p>
+
+                    <a href="/read/20/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 20: Fireworks Night</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Timer, follow(path:), sprite color blending, shake gestures</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn about timers and color blends while making things go bang!</p>
+
+                    <a href="/read/21/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 21: Local Notifications</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">UNUserNotificationCenter, UNNotificationRequest, UNMutableNotificationContent, UNCalendarNotificationTrigger, and UNTimeIntervalNotificationTrigger</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Send reminders, prompts and alerts even when your app isn't running.</p>
+
+                    <a href="/read/22/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 22: Detect-a-Beacon</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">CLLocationManager, CLBeaconRegion, CLProximity</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn to find and range iBeacons using our first project for a physical device.</p>
+
+                    <a href="/read/23/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 23: Space Race</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Per-pixel collision detection, advancing particle systems, linear and angular damping</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Dodge space debris while you learn about per-pixel collision detection.</p>
+
+                    <a href="/read/24/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 24: Swift Extensions</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Language extensions, Swift playgrounds</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Try your hand at improving the built-in data types of Swift.</p>
+
+                    <a href="/read/25/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 25: Selfie Share</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Multipeer Connectivity Framework</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Make a multipeer photo sharing app in just 150 lines of code.</p>
+
+                    <a href="/read/26/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 26: Marble Maze</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Core Motion, collision bitmasks, array reversing, compiler directives</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Respond to device tilting by steering a ball around a vortex maze.</p>
+
+                    <a href="/read/27/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 27: Core Graphics</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Core Graphics</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Draw 2D shapes using Apple's high-speed drawing framework.</p>
+
+                    <a href="/read/28/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 28: Secret Swift</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Touch ID, device keychain</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Save user data securely using the device keychain and Touch ID.</p>
+
+                    <a href="/read/29/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 29: Exploding Monkeys</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Mixing UIKit and SpriteKit, texture atlases, scene transitions, destructible terrain</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Remake a classic DOS game and learn about destructible terrain and scene transitions.</p>
+
+                    <a href="/read/30/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 30: Instruments</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Profiling, shadows, image caching</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Become a bug detective and track down lost memory, slow drawing and more.</p>
+
+                    <a href="/read/31/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 31: Multibrowser</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">UIStackView, multitasking for iPad, size classes</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Get started with UIStackView and see just how easy iPad multitasking can be.</p>
+
+                    <a href="/read/32/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 32: SwiftSearcher</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Core Spotlight, SFSafariViewController, NSAttributedString, Dynamic Type, automatic UITableViewCell sizing</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Add your app's content to iOS 9's Spotlight search and take advantage of the new Safari integration.</p>
+
+                    <a href="/read/33/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 33: What's that Whistle?</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">CloudKit, CKRecord, CKQuery, CKQuerySubscription, AVAudioRecorder, and push messages</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Build a crowd-sourced song recognition app using Apple's free platform as a service: CloudKit.</p>
+
+                    <a href="/read/34/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 34: Four in a Row</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">GameplayKit, GKMinmaxStrategist, GKGameModel, UIStackView, map()</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Let iOS take over the AI in your games using GameplayKit.</p>
+
+                    <a href="/read/35/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 35: Generating random numbers</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">GameplayKit, GKRandomSource, GKARC4RandomSource, GKRandomDistribution, GKShuffledDistribution, GKGaussianDistribution</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">GameplayKit lets you generate random numbers in ways you soon won't be able to live without.</p>
+
+                    <a href="/read/36/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 36: Crashy Plane</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">SKAudioNode, GameplayKit randomization, and the guard keyword</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Ever wanted to make a Flappy Bird clone? Now you can do it in under an hour thanks to SpriteKit.</p>
+
+                    <a href="/read/37/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 37: Psychic Tester</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">CAEmitterLayer, CAGradientLayer, IBDesignable, transition(with:), 3D Touch, WatchKit</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Are you psychic? Of course not. But what if we could use our coding skills to make a game to fool your friends into thinking otherwise?</p>
+
+                    <a href="/read/38/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 38: GitHub Commits</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">Core Data, NSPersistentContainer, NSFetchRequest, NSSortDescriptor, NSFetchedResultsController, DateFormatter</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Get on board with Core Data and learn to read, write and query objects using Apple's object graph and persistence framework.</p>
+
+                    <a href="/read/39/overview"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Project 39: Unit testing with XCTest</h2></a>
+                    <h3 style="margin-top: 0; margin-bottom: 10px; text-align: left;">XCTest, measure(), filter(), sort(), NSCountedSet</h3>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn how to write unit tests and user interface tests using Xcode's built-in testing framework.</p>
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+                    <h2>ARTICLES</h2>
+                    <hr class="colored">
+                    <a href="/example-code"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Get free Swift example code</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Search 300 Swift examples, all updated for Swift 3.0 so you can be guaranteed they work.</p>
+
+                    <a href="/test"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Test your Swift skills!</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">How well do you know Swift? Find out with three graded language tests – good luck!</p>
+
+                    <a href="/ios10"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">What's new in iOS 10?</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn about MSMessagesAppViewController, UIViewPropertyAnimator, SFSpeechRecognizer, UNMutableNotificationContent, SiriKit and much more.</p>
+
+                    <a href="/ios9"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">What's new in iOS 9?</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn about Core Spotlight, SFSafariViewController, GameplayKit, app thinning and much more.</p>
+
+                    <a href="/ios9-tutorials"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Free iOS 9 tutorials!</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">This brings together all my iOS 9 tutorials in one place, and it's the perfect way to get started with all the great new features announced by Apple.</p>
+
+                    <a href="/swift3"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">What's new in Swift 3?</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn about the major name changes coming up in Swift 3 with before and after examples.</p>
+
+                    <a href="/swift2-2"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">What's new in Swift 2.2?</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Learn about the deprecations, additions and improvements in this interim language release.</p>
+
+                    <a href="/swift2"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">What's new in Swift 2?</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">A brief overview of the key changes to Swift introduced at WWDC.</p>
+
+                    <a href="/new-features-swift-2"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">New features of Swift 2 by example</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">Try your hand at the new error checking, guard, defer and API availability checking.</p>
+
+                    <a href="/safari-content-blocking-ios9"><h2 class="project-title" style="margin-bottom: 0px; text-align: left;">Safari Content Blocking: a tutorial by example</h2></a>
+                    <p style="line-height: 1.5; margin-bottom: 40px; text-align: left;">How to write a content blocker extension in 10 minutes (and never see the Daily Mail again).</p>
+                </div>
+
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing" style="background-image: url('/img/bg-pricing.jpg')">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2>SUPPORT MY WORK</h2>
+                    <hr class="colored">
+                    <!--<p>You can support my work by buying any of my books, or upgrade to the ultimate Swift learning experience by buying my complete Swift bundle!</p> -->
+                </div>
+            </div>
+            <div class="row content-row">
+                <div class="col-md-6">
+                    <div class="pricing-item featured-first">
+                        <h3>FREE</h3>
+                        <hr class="colored">
+                        <div class="price"><span class="number"><sup>$</sup>0</span></div>
+                        <ul class="list-group">
+                            <li class="list-group-item">Read all 40 Hacking with Swift projects online</li>
+                            <li class="list-group-item">Includes advertising to offset my hosting costs</li>
+                        </ul>
+                        <a href="#tutorials" class="btn btn-outline-dark">READ FREE</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pricing-item featured-last">
+                        <h3>PREMIUM</h3>
+                        <hr class="colored">
+                        <div class="price"><span class="number"><sup>$</sup>30</span></div>
+                        <ul class="list-group">
+                            <li class="list-group-item">Get all 40 Hacking with Swift projects as PDF, ePub, Mobi</li>
+                            <li class="list-group-item">Includes over 290 tips and solutions from my Swift Knowledge Base</li>
+                            <li class="list-group-item">Bonus exercises and review notes</li>
+                            <li class="list-group-item">Printable Swift Quick Tips </li>
+                            <li class="list-group-item">Xcode Tips and Tricks Video</li>
+                            <li class="list-group-item">Support my work!</li>
+                        </ul>
+                        <a href="/store/hacking-with-swift" class="btn btn-outline-dark">MORE INFO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <a href="/store" class="btn btn-block btn-full-width" style="white-space: normal;">Click here to visit the Hacking with Swift store &gt;&gt;</a>
+    
+    <footer class="footer" style="background-image: url('/img/bg-footer.jpg')">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 contact-details">
+                    <a href="https://twitter.com/twostraws">
+                        <h4><i class="fa fa-twitter fa-4x"></i></h4>
+                        <p>@twostraws</p>
+                    </a>
+                </div>
+                <div class="col-md-6 contact-details">
+                    <a href="mailto:paul@hackingwithswift.com">
+                        <h4><i class="fa fa-envelope-o fa-4x"></i></h4>
+                        <p>paul@hackingwithswift.com
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-lg-12">
+                    <p class="small">Swift, the Swift logo, Xcode, Instruments, Cocoa Touch, Touch ID, AirDrop, iBeacon, iPhone, iPad, Safari, App Store, Mac and macOS are trademarks of Apple Inc., registered in the U.S. and other countries. Pulp Fiction is copyright &copy; 1994 Miramax Films. Hacking with Swift &copy;2016 Paul Hudson.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core Scripts -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugin Scripts -->
+    <script src="/js/plugins/jquery.easing.min.js"></script>
+    <script src="/js/plugins/classie.js"></script>
+
+        <script src="/js/plugins/cbpAnimatedHeader.js"></script>
+    
+    <script src="/js/plugins/jquery.mixitup.js"></script>
+    <script src="/js/prism.js"></script>
+    <script src="/js/vitality.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-58275818-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- lucky I know how to use GitHub, eh, Mr Spence? https://github.com/reek/anti-adblock-killer/issues/1151 -->
+    <script>
+		function hws_getRandomInt(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+		function createHouseAd() {
+			var ad = pickHouseAd();
+			return '<a href="' + ad.url + '"><img src="/assets/' + ad.filename + '" style="border: 1px solid black;" class="img-responsive center-block" /></a>';
+		}
+
+		function pickHouseAd() {
+			switch (hws_getRandomInt(0, 19)) {
+				case 0:
+					return {'url': '/store/?source=buy-1', 'filename': 'notice-buy-1.png'}
+
+				case 1:
+					return {'url': '/store/?source=buy-2', 'filename': 'notice-buy-2.png'}
+
+				case 2:
+					return {'url': '/store/hacking-with-swift?source=hws-1', 'filename': 'notice-hws-1.png'}
+
+				case 3:
+					return {'url': '/store/hacking-with-swift?source=hws-2', 'filename': 'notice-hws-2.png'}
+
+				case 4:
+					return {'url': '/store/practical-ios10?source=ios10-1', 'filename': 'notice-ios10-1.png'}
+
+				case 5:
+					return {'url': '/store/pro-swift?source=proswift-1', 'filename': 'notice-proswift-1.png'}
+
+				case 6:
+					return {'url': '/store/pro-swift?source=proswift-2', 'filename': 'notice-proswift-2.png'}
+
+				case 7:
+					return {'url': '/store/swift-power-pack?source=powerpack-1', 'filename': 'notice-powerpack-1.png'}
+
+				case 8:
+					return {'url': '/store/swift-power-pack?source=powerpack-2', 'filename': 'notice-powerpack-2.png'}
+
+				case 9:
+					return {'url': '/store/hacking-with-macos?source=macos-1', 'filename': 'notice-macos-1.png'}
+
+				case 10:
+					return {'url': '/store/hacking-with-macos?source=macos-2', 'filename': 'notice-macos-2.png'}
+
+				case 11:
+					return {'url': '/store/server-side-swift?source=server-1', 'filename': 'notice-server-1.png'}
+
+				case 12:
+					return {'url': '/store/server-side-swift?source=server-2', 'filename': 'notice-server-2.png'}
+
+				case 13:
+					return {'url': '/store/swift-coding-challenges?source=codingchallenges-1', 'filename': 'notice-codingchallenges-1.png'}
+
+				case 14:
+					return {'url': '/store/swift-coding-challenges?source=codingchallenges-2', 'filename': 'notice-codingchallenges-2.png'}
+
+				case 15:
+					return {'url': 'https://gumroad.com/l/natural-swift', 'filename': 'notice-naturalswift-1.png'}
+
+				case 16:
+					return {'url': 'https://gumroad.com/l/natural-swift', 'filename': 'notice-naturalswift-2.png'}
+
+				case 17:
+					return {'url': 'https://gumroad.com/l/natural-swift', 'filename': 'notice-naturalswift-3.png'}
+
+				case 18:
+					return {'url': '/store/hacking-with-watchos?source=watchos-1', 'filename': 'notice-watchos-1.png'}
+
+				case 19:
+					return {'url': '/store/hacking-with-watchos?source=watchos-2', 'filename': 'notice-watchos-2.png'}
+			}
+		}
+	</script>
+
+    <script src="/js/ads.js"></script>
+    <script>
+    if(window.areAdsDisplayed === undefined) {
+        var houseAd = createHouseAd();
+        $('.hws-notices-top').html(houseAd);
+        $('.hws-notices-bottom').html(houseAd);
+    }
+    </script>
+</body>
+
+</html>
